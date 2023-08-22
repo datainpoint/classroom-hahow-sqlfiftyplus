@@ -2,16 +2,16 @@ import unittest
 import pymysql.cursors
 from pymysql.constants import CLIENT
 import argparse
-from ch03answers import answer_0301
-from ch03answers import answer_0302
-from ch03answers import answer_0303
-from ch03answers import answer_0304
-from ch03answers import answer_0305
-from ch03answers import answer_0306
-from ch03answers import answer_0307
-from ch03answers import answer_0308
-from ch03answers import answer_0309
-from ch03answers import answer_0310
+from ch03exercises import answer_0301
+from ch03exercises import answer_0302
+from ch03exercises import answer_0303
+from ch03exercises import answer_0304
+from ch03exercises import answer_0305
+from ch03exercises import answer_0306
+from ch03exercises import answer_0307
+from ch03exercises import answer_0308
+from ch03exercises import answer_0309
+from ch03exercises import answer_0310
 
 class TestQueryRecap(unittest.TestCase):
     def test_0301(self):
