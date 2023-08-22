@@ -13,7 +13,7 @@ from ch03exercises import answer_0308
 from ch03exercises import answer_0309
 from ch03exercises import answer_0310
 
-class TestQueryRecap(unittest.TestCase):
+class TestBasicQuery(unittest.TestCase):
     def test_0301(self):
         with connection.cursor() as cursor:
             cursor.execute(answer_0301)
@@ -109,7 +109,7 @@ connection = pymysql.connect(host='localhost',
                              password=f"{user_password}",
                              charset='utf8mb4',
                              cursorclass=pymysql.cursors.DictCursor)
-suite = unittest.TestLoader().loadTestsFromTestCase(TestQueryRecap)
+suite = unittest.TestLoader().loadTestsFromTestCase(TestBasicQuery)
 runner = unittest.TextTestRunner(verbosity=2)
 test_results = runner.run(suite)
 number_of_failures = len(test_results.failures)
