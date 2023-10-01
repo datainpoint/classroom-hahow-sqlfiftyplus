@@ -15674,11 +15674,14 @@ XML、JSON、地理圖資等）。</li>
 <span class="k">UPDATE</span><span class="w"> </span><span class="n">covid19</span><span class="p">.</span><span class="n">locations</span>
 <span class="w">   </span><span class="k">SET</span><span class="w"> </span><span class="n">iso2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;NA&#39;</span>
 <span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">country_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Namibia&#39;</span><span class="p">;</span>
-<span class="w"> </span><span class="k">UPDATE</span><span class="w"> </span><span class="n">covid19</span><span class="p">.</span><span class="n">locations</span>
+<span class="k">UPDATE</span><span class="w"> </span><span class="n">covid19</span><span class="p">.</span><span class="n">locations</span>
 <span class="w">   </span><span class="k">SET</span><span class="w"> </span><span class="n">iso2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
 <span class="w">       </span><span class="n">iso3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">NULL</span>
 <span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">iso2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w"> </span><span class="k">AND</span>
 <span class="w">       </span><span class="n">iso3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">;</span>
+<span class="k">UPDATE</span><span class="w"> </span><span class="n">covid19</span><span class="p">.</span><span class="n">locations</span>
+<span class="w">   </span><span class="k">SET</span><span class="w"> </span><span class="n">province_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">NULL</span>
+<span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">province_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">;</span>
 <span class="c1">-- 更新資料</span>
 </pre></div>
 
@@ -15756,7 +15759,7 @@ XML、JSON、地理圖資等）。</li>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="%E5%80%8B%E6%A1%88%E7%A0%94%E7%A9%B6%EF%BC%9AtwElection2020-%E8%B3%87%E6%96%99%E5%BA%AB">&#20491;&#26696;&#30740;&#31350;&#65306;twElection2020 &#36039;&#26009;&#24235;<a class="anchor-link" href="#%E5%80%8B%E6%A1%88%E7%A0%94%E7%A9%B6%EF%BC%9AtwElection2020-%E8%B3%87%E6%96%99%E5%BA%AB">&#182;</a></h2>
+<h2 id="%E5%80%8B%E6%A1%88%E7%A0%94%E7%A9%B6%EF%BC%9Atw_election_2020-%E8%B3%87%E6%96%99%E5%BA%AB">&#20491;&#26696;&#30740;&#31350;&#65306;tw_election_2020 &#36039;&#26009;&#24235;<a class="anchor-link" href="#%E5%80%8B%E6%A1%88%E7%A0%94%E7%A9%B6%EF%BC%9Atw_election_2020-%E8%B3%87%E6%96%99%E5%BA%AB">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -15767,7 +15770,7 @@ XML、JSON、地理圖資等）。</li>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="twElection2020-%E8%B3%87%E6%96%99%E4%BE%86%E6%BA%90">twElection2020 &#36039;&#26009;&#20358;&#28304;<a class="anchor-link" href="#twElection2020-%E8%B3%87%E6%96%99%E4%BE%86%E6%BA%90">&#182;</a></h2><ul>
+<h2 id="tw_election_2020-%E8%B3%87%E6%96%99%E4%BE%86%E6%BA%90">tw_election_2020 &#36039;&#26009;&#20358;&#28304;<a class="anchor-link" href="#tw_election_2020-%E8%B3%87%E6%96%99%E4%BE%86%E6%BA%90">&#182;</a></h2><ul>
 <li><a href="https://db.cec.gov.tw/ElecTable">投開票概況資料</a></li>
 <li>原始資料格式：Excel XLSX</li>
 <li>更新狀態：停止，公開封存。</li>
@@ -15784,7 +15787,7 @@ XML、JSON、地理圖資等）。</li>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="twElection2020-%E8%B3%87%E6%96%99%E5%BA%AB%EF%BC%9A%E6%A6%82%E5%BF%B5%E6%A8%A1%E5%BC%8F">twElection2020 &#36039;&#26009;&#24235;&#65306;&#27010;&#24565;&#27169;&#24335;<a class="anchor-link" href="#twElection2020-%E8%B3%87%E6%96%99%E5%BA%AB%EF%BC%9A%E6%A6%82%E5%BF%B5%E6%A8%A1%E5%BC%8F">&#182;</a></h2><ul>
+<h2 id="tw_election_2020-%E8%B3%87%E6%96%99%E5%BA%AB%EF%BC%9A%E6%A6%82%E5%BF%B5%E6%A8%A1%E5%BC%8F">tw_election_2020 &#36039;&#26009;&#24235;&#65306;&#27010;&#24565;&#27169;&#24335;<a class="anchor-link" href="#tw_election_2020-%E8%B3%87%E6%96%99%E5%BA%AB%EF%BC%9A%E6%A6%82%E5%BF%B5%E6%A8%A1%E5%BC%8F">&#182;</a></h2><ul>
 <li>投票所明細。</li>
 <li>行政區。</li>
 <li>候選人。</li>
@@ -15801,7 +15804,7 @@ XML、JSON、地理圖資等）。</li>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="twElection2020-%E8%B3%87%E6%96%99%E5%BA%AB%EF%BC%9A%E9%82%8F%E8%BC%AF%E6%A8%A1%E5%BC%8F">twElection2020 &#36039;&#26009;&#24235;&#65306;&#37007;&#36655;&#27169;&#24335;<a class="anchor-link" href="#twElection2020-%E8%B3%87%E6%96%99%E5%BA%AB%EF%BC%9A%E9%82%8F%E8%BC%AF%E6%A8%A1%E5%BC%8F">&#182;</a></h2><ul>
+<h2 id="tw_election_2020-%E8%B3%87%E6%96%99%E5%BA%AB%EF%BC%9A%E9%82%8F%E8%BC%AF%E6%A8%A1%E5%BC%8F">tw_election_2020 &#36039;&#26009;&#24235;&#65306;&#37007;&#36655;&#27169;&#24335;<a class="anchor-link" href="#tw_election_2020-%E8%B3%87%E6%96%99%E5%BA%AB%EF%BC%9A%E9%82%8F%E8%BC%AF%E6%A8%A1%E5%BC%8F">&#182;</a></h2><ul>
 <li>思索資料表的關聯性<ul>
 <li>政黨 vs. 候選人（一對多）</li>
 <li>投票所 vs. 政黨（多對多）</li>
@@ -15822,7 +15825,7 @@ XML、JSON、地理圖資等）。</li>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="twElection2020-%E8%B3%87%E6%96%99%E5%BA%AB%EF%BC%9A%E5%AF%A6%E9%AB%94%E6%A8%A1%E5%BC%8F">twElection2020 &#36039;&#26009;&#24235;&#65306;&#23526;&#39636;&#27169;&#24335;<a class="anchor-link" href="#twElection2020-%E8%B3%87%E6%96%99%E5%BA%AB%EF%BC%9A%E5%AF%A6%E9%AB%94%E6%A8%A1%E5%BC%8F">&#182;</a></h2><ul>
+<h2 id="tw_election_2020-%E8%B3%87%E6%96%99%E5%BA%AB%EF%BC%9A%E5%AF%A6%E9%AB%94%E6%A8%A1%E5%BC%8F">tw_election_2020 &#36039;&#26009;&#24235;&#65306;&#23526;&#39636;&#27169;&#24335;<a class="anchor-link" href="#tw_election_2020-%E8%B3%87%E6%96%99%E5%BA%AB%EF%BC%9A%E5%AF%A6%E9%AB%94%E6%A8%A1%E5%BC%8F">&#182;</a></h2><ul>
 <li>主要實體資料表命名：<code>admin_regions</code>、<code>candidates</code>、<code>parties</code></li>
 <li>橋接資料表命名：<code>presidential</code>、<code>legislative_regional</code>、<code>legislative_at_large</code></li>
 <li>連接鍵命名：<code>admin_region_id</code>、<code>candidate_id</code>、<code>party_id</code></li>
@@ -15838,7 +15841,7 @@ XML、JSON、地理圖資等）。</li>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="%E4%BD%BF%E7%94%A8-Python-%E6%93%B7%E5%8F%96-twElection2020-%E8%B3%87%E6%96%99%E4%BE%86%E6%BA%90">&#20351;&#29992; Python &#25847;&#21462; twElection2020 &#36039;&#26009;&#20358;&#28304;<a class="anchor-link" href="#%E4%BD%BF%E7%94%A8-Python-%E6%93%B7%E5%8F%96-twElection2020-%E8%B3%87%E6%96%99%E4%BE%86%E6%BA%90">&#182;</a></h2><ul>
+<h2 id="%E4%BD%BF%E7%94%A8-Python-%E6%93%B7%E5%8F%96-tw_election_2020-%E8%B3%87%E6%96%99%E4%BE%86%E6%BA%90">&#20351;&#29992; Python &#25847;&#21462; tw_election_2020 &#36039;&#26009;&#20358;&#28304;<a class="anchor-link" href="#%E4%BD%BF%E7%94%A8-Python-%E6%93%B7%E5%8F%96-tw_election_2020-%E8%B3%87%E6%96%99%E4%BE%86%E6%BA%90">&#182;</a></h2><ul>
 <li>下載 <a href="https://classroom-hahow-sqlfiftyplus.s3.ap-northeast-1.amazonaws.com/zip_files/twElection2020ETLProject.zip">twElection2020ETLProject.zip</a> 並解壓縮作為一個專案資料夾。</li>
 <li>開啟終端機/Anaconda Prompt 啟動專案環境 <code>conda activate pythonmysql</code></li>
 <li>使用 <code>cd</code> 指令移動到專案資料夾。</li>
@@ -15857,7 +15860,7 @@ XML、JSON、地理圖資等）。</li>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="%E6%AA%A2%E8%A6%96-python-twElection2020ETL.py-%E5%9F%B7%E8%A1%8C%E7%B5%90%E6%9E%9C">&#27298;&#35222; <code>python twElection2020ETL.py</code> &#22519;&#34892;&#32080;&#26524;<a class="anchor-link" href="#%E6%AA%A2%E8%A6%96-python-twElection2020ETL.py-%E5%9F%B7%E8%A1%8C%E7%B5%90%E6%9E%9C">&#182;</a></h2><ul>
 <li>程式執行完畢後，檢視專案資料夾中是否產出以下檔案：<ul>
-<li>SQLite 資料庫檔案：<code>twElection2020.db</code></li>
+<li>SQLite 資料庫檔案：<code>tw_election_2020.db</code></li>
 <li>CSV 檔案：<code>admin_regions.csv</code>、<code>candidates.csv</code>、<code>parties.csv</code>、<code>presidential.csv</code>、<code>legislative_regional.csv</code>、<code>legislative_at_large.csv</code></li>
 </ul>
 </li>
