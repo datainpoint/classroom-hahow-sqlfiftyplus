@@ -15092,11 +15092,11 @@ div.jp-OutputPrompt {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-mysql"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="k">name</span>
-<span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="n">directors</span>
+<span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="n">imdb</span><span class="p">.</span><span class="n">directors</span>
 <span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">name</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span><span class="s1">'Steven Spielberg'</span><span class="p">,</span><span class="w"> </span><span class="s1">'Christopher Nolan'</span><span class="p">,</span><span class="w"> </span><span class="s1">'Aamir Khan'</span><span class="p">)</span>
 <span class="w"> </span><span class="k">UNION</span><span class="w"> </span><span class="k">ALL</span>
 <span class="k">SELECT</span><span class="w"> </span><span class="k">name</span>
-<span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="n">actors</span>
+<span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="n">imdb</span><span class="p">.</span><span class="n">actors</span>
 <span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">name</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span><span class="s1">'Tom Hanks'</span><span class="p">,</span><span class="w"> </span><span class="s1">'Tom Cruise'</span><span class="p">,</span><span class="w"> </span><span class="s1">'Aamir Khan'</span><span class="p">);</span>
 </pre></div>
 
@@ -15176,11 +15176,11 @@ div.jp-OutputPrompt {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-mysql"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="k">name</span>
-<span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="n">directors</span>
+<span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="n">imdb</span><span class="p">.</span><span class="n">directors</span>
 <span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">name</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span><span class="s1">'Steven Spielberg'</span><span class="p">,</span><span class="w"> </span><span class="s1">'Christopher Nolan'</span><span class="p">,</span><span class="w"> </span><span class="s1">'Aamir Khan'</span><span class="p">)</span>
 <span class="n">INTERSECT</span>
 <span class="k">SELECT</span><span class="w"> </span><span class="k">name</span>
-<span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="n">actors</span>
+<span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="n">imdb</span><span class="p">.</span><span class="n">actors</span>
 <span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">name</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span><span class="s1">'Tom Hanks'</span><span class="p">,</span><span class="w"> </span><span class="s1">'Tom Cruise'</span><span class="p">,</span><span class="w"> </span><span class="s1">'Aamir Khan'</span><span class="p">);</span>
 </pre></div>
 
@@ -15324,11 +15324,11 @@ div.jp-OutputPrompt {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-mysql"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="k">name</span>
-<span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="n">actors</span>
+<span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="n">imdb</span><span class="p">.</span><span class="n">actors</span>
 <span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">name</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span><span class="s1">'Tom Hanks'</span><span class="p">,</span><span class="w"> </span><span class="s1">'Tom Cruise'</span><span class="p">,</span><span class="w"> </span><span class="s1">'Aamir Khan'</span><span class="p">)</span>
 <span class="k">EXCEPT</span>
 <span class="k">SELECT</span><span class="w"> </span><span class="k">name</span>
-<span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="n">directors</span>
+<span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="n">imdb</span><span class="p">.</span><span class="n">directors</span>
 <span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">name</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span><span class="s1">'Steven Spielberg'</span><span class="p">,</span><span class="w"> </span><span class="s1">'Christopher Nolan'</span><span class="p">,</span><span class="w"> </span><span class="s1">'Aamir Khan'</span><span class="p">);</span>
 </pre></div>
 
