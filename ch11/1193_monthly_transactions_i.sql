@@ -12,7 +12,12 @@ WITH aggregate_all_transactions AS (
            country,
            COUNT(*) AS trans_count,
            SUM(amount) AS trans_total_amount
-      FROM Transactions
+      FROM (SELECT id,
+                   IFNULL(country, 'null') AS country,
+                   state,
+                   amount,
+                   trans_date
+              FROM Transactions) AS Transactions_Subquery
      GROUP BY month,
               country
 ), aggregate_approved_transactions AS (
@@ -20,13 +25,19 @@ WITH aggregate_all_transactions AS (
            country,
            COUNT(*) AS approved_count,
            SUM(amount) AS approved_total_amount
-      FROM Transactions
+      FROM (SELECT id,
+                   IFNULL(country, 'null') AS country,
+                   state,
+                   amount,
+                   trans_date
+              FROM Transactions) AS Transactions_Subquery
      WHERE state = 'approved'
      GROUP BY month,
               country
 )
 SELECT aggregate_all_transactions.month,
-       aggregate_all_transactions.country,
+       CASE WHEN aggregate_all_transactions.country = 'null' THEN null
+            ELSE aggregate_all_transactions.country END AS country,
        aggregate_all_transactions.trans_count,
        IFNULL(aggregate_approved_transactions.approved_count, 0) AS approved_count,
        aggregate_all_transactions.trans_total_amount,
